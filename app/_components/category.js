@@ -3,11 +3,11 @@ import image2 from "../_assets/image2.jpg";
 
 import Image from "next/image";
 
-export default function Advantages() {
+export default function Category() {
   return (
-    <div className="py-20">
+    <div id="category" className=" py-20">
       <div className="flex justify-center items-center flex-wrap gap-4">
-        <div className="w-1/2 sm:w-2/5">
+        <div className="w-4/5 md:w-2/5">
           <h4 className="text-lg font-light tracking-wider">CATEGORIES</h4>
           <h1 className="text-4xl font-bold pb-8">What We Offer?</h1>
 
@@ -23,15 +23,15 @@ export default function Advantages() {
             </p>
           </div>
         </div>
-        <div className=" sm:block w-2/5 ">
+        <div className="hidden md:block w-2/5 ">
           <Image className="mx-auto shadow-2xl  w-96" src={image1} alt="" />
         </div>
       </div>
       <div className="flex justify-center flex-row items-center flex-wrap gap-4">
-        <div className="hidden sm:block w-2/5 relative">
+        <div className="hidden md:block w-2/5 relative">
           <Image className="w-96 shadow-2xl" src={image2} alt="" />
         </div>
-        <div className="w-4/5 sm:w-2/5">
+        <div className="w-4/5 md:w-2/5">
           <div>
             <h2 className="text-2xl font-light py-4">Commercial Property</h2>
             <p className="text-md font-light tracking-wider">

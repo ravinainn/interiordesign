@@ -39,7 +39,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className=" py-32 mx-auto my-20 rounded w-4/5 text-white bg-black flex flex-wrap gap-4 justify-center relative p-10 overflow-hidden"
+      className="py-4 md:py-32 mx-auto my-20 rounded w-4/5 text-white bg-black flex flex-wrap gap-4 justify-center relative md:p-10 overflow-hidden"
     >
       <div className="w-2/5 flex flex-col gap-4  justify-center">
         <h1 className="text-5xl font-semibold pb-8">Contact Us</h1>
@@ -68,7 +68,7 @@ export default function Contact() {
           />
 
           <textarea
-            className=" placeholder:font-light px-2 text-lg tracking-wider py-2 rounded min-h-32 bg-white outline-none focus:outline-none"
+            className="w-fit md:w-full placeholder:font-light px-2 text-lg tracking-wider py-2 rounded min-h-32 bg-white outline-none focus:outline-none"
             id="query"
             placeholder="Start Asking Your Query"
             value={query}
@@ -86,10 +86,22 @@ export default function Contact() {
         {error && <p className="error">{error}</p>}
       </div>
       <div className="w-2/5 flex justify-end relative">
-        <Image className="w-72 z-10 rounded" src={image3} alt="image1" />
+        <Image
+          className="hidden md:block w-72 z-10 rounded"
+          src={image3}
+          alt="image1"
+        />
       </div>
-      <Image className="absolute -right-72 -top-72" src={ring} alt="ring" />
-      <Image className="absolute -left-72 -bottom-72" src={ring} alt="ring" />
+      <Image
+        className="absolute scale-150 -right-32 -top-24 md:scale-100 md:-right-72 md:-top-72"
+        src={ring}
+        alt="ring"
+      />
+      <Image
+        className="absolute  scale-150 -left-32 -bottom-24 md:scale-100 md:-left-72 md:-bottom-72"
+        src={ring}
+        alt="ring"
+      />
     </div>
   );
 }

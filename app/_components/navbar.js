@@ -31,7 +31,7 @@ export default function NavBar() {
           <Link className="" href={"/"}>
             Home
           </Link>
-          <Link href={"#advantages"}>Advantages</Link>
+          <Link href={"#category"}>Categories</Link>
           <Link href={"#contact"}>Contact Us</Link>
         </div>
       </div>
