@@ -44,11 +44,11 @@ export default function Contact() {
       <div className="w-2/5 flex flex-col gap-4  justify-center">
         <h1 className="text-5xl font-semibold pb-8">Contact Us</h1>
         <form
-          className="flex flex-col gap-4 px-4  rounded py-4 text-black z-10"
+          className="flex flex-col gap-4 px-4 rounded py-4 text-black z-10 overflow-auto"
           onSubmit={handleSubmit}
         >
           <input
-            className=" placeholder:font-light px-2 text-lg tracking-wider py-2 rounded w-fit bg-white focus:outline-none"
+            className="placeholder:font-light px-2 text-lg tracking-wider py-2 rounded w-fit bg-white focus:outline-none"
             type="text"
             id="name"
             placeholder="Enter your name"
