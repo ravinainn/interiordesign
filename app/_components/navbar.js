@@ -14,9 +14,10 @@ export default function NavBar() {
   return (
     <div className="md:absolute top-10 bg-white bg-opacity-30 w-screen z-50 py-4 ">
       <div className=" flex justify-between flex-wrap items-center w-11/12 mx-auto ">
-        <div className="text-2xl font-bold leading-3 ">
-          <span className="text-xl font-thin ">INTERIOR</span>
-          <br /> DESIGN
+        <div className="text-white text-3xl font-bold leading-6 text-center ">
+          ICRAVE
+          <br />
+          <span className="text-xl font-thin ">CREATIONS</span>
         </div>
         <button className="md:hidden focus:outline-none" onClick={toggleNav}>
           {isOpen ? <RxCross2 className="z-50" /> : <IoMenu className="z-50" />}

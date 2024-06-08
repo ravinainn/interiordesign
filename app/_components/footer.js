@@ -1,9 +1,10 @@
 export default function Footer() {
   return (
     <div className="flex justify-center  gap-32 flex-wrap items-center pb-20">
-      <div className="text-7xl font-bold">
-        <span className="text-6xl font-thin ">INTERIOR</span>
-        <br /> DESIGN
+      <div className="text-7xl font-bold leading-10">
+        ICRAVE
+        <br />
+        <span className="text-5xl font-thin ">CREATIONS</span>
       </div>
 
       <div>
