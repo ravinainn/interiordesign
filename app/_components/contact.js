@@ -86,7 +86,7 @@ export default function Contact() {
         {error && <p className="error">{error}</p>}
       </div>
       <div className="w-2/5 flex justify-end relative">
-        <Image className="w-72 z-10" src={image3} alt="image1" />
+        <Image className="w-72 z-10 rounded" src={image3} alt="image1" />
       </div>
       <Image className="absolute -right-72 -top-72" src={ring} alt="ring" />
       <Image className="absolute -left-72 -bottom-72" src={ring} alt="ring" />
