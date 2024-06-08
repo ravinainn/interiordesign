@@ -41,14 +41,14 @@ export default function Contact() {
       id="contact"
       className="py-4 md:py-32 mx-auto my-20 rounded w-4/5 text-white bg-black flex flex-wrap gap-4 justify-center relative md:p-10 overflow-hidden"
     >
-      <div className="w-2/5 flex flex-col gap-4  justify-center">
+      <div className="md:w-2/5 flex flex-col gap-4  justify-center">
         <h1 className="text-5xl font-semibold pb-8">Contact Us</h1>
         <form
           className="flex flex-col gap-4 px-4 rounded py-4 text-black z-10 overflow-auto"
           onSubmit={handleSubmit}
         >
           <input
-            className="placeholder:font-light px-2 text-lg tracking-wider py-2 rounded w-fit bg-white focus:outline-none"
+            className="placeholder:font-light px-2 text-lg tracking-wider py-2 rounded w-full md:w-fit bg-white focus:outline-none"
             type="text"
             id="name"
             placeholder="Enter your name"
@@ -58,7 +58,7 @@ export default function Contact() {
           />
 
           <input
-            className=" placeholder:font-light px-2 text-lg tracking-wider py-2 rounded w-fit bg-white focus:outline-none"
+            className=" placeholder:font-light px-2 text-lg tracking-wider py-2 rounded w-full md:w-fit bg-white focus:outline-none"
             type="tel"
             id="phoneNumber"
             placeholder="Enter your mobile no."
@@ -68,7 +68,7 @@ export default function Contact() {
           />
 
           <textarea
-            className="w-fit md:w-full placeholder:font-light px-2 text-lg tracking-wider py-2 rounded min-h-32 bg-white outline-none focus:outline-none"
+            className="w-full placeholder:font-light px-2 text-lg tracking-wider py-2 rounded min-h-32 bg-white outline-none focus:outline-none"
             id="query"
             placeholder="Start Asking Your Query"
             value={query}
