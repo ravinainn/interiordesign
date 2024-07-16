@@ -14,7 +14,7 @@ export default function NavBar() {
   return (
     <div className="md:absolute top-10 bg-white bg-opacity-30 w-screen z-50 py-4 ">
       <div className=" flex justify-between flex-wrap items-center w-11/12 mx-auto ">
-        <div className="text-white text-3xl font-bold leading-6 text-center ">
+        <div className="md:text-white text-black text-3xl font-bold leading-6 text-center ">
           ICRAVE
           <br />
           <span className="text-xl font-thin ">CREATIONS</span>
